@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serialization in django</title>
+</head>
+<body>
+    <div class="container">
+        <h1><center>Movies Information</center></h1>
+        <div class = "movie-data">
+            {%  for x in obj1    %}
+            <p><b>Sno:</b>{{ x.sno }}</p>
+            <p><b>Movie Name:</b> {{ x.name }}</p>
+            <p><b>Hero:</b>{{ x.hero }}</p>
+            <p><b>Heroine:</b>{{ x.heroine }}</p>
+            <p><b> Director:</b>{{ x.director }}</p>
+            <p><b>Music</b>{{ x.music }}</p>
+            </div>
+            <p>----------------------------</p>
+            {% endfor  %}
+    </div>
+</body>
+</html>
